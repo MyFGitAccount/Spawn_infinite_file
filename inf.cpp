@@ -1,5 +1,6 @@
-include <cstdlib>
+#include <cstdlib>
 #include <cstring>
+#include <cstddef>
 #include <iostream>
 #include <random>
 
@@ -12,7 +13,7 @@ int main() {
     sprintf(filename, "spawninfinatefile_%zu", rand);
 
     char compileCmd[150];
-    sprintf(compileCmd, "g++ spawninfinatefile.cpp -o %s", filename);
+    sprintf(compileCmd, "g++ inf.cpp -o %s", filename);
 
     if (!system(compileCmd)) {
         std::cout << "This is a self compile program yep!!!\n";
