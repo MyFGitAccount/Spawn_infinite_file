@@ -1,4 +1,4 @@
 inf: inf.cpp
-  g++ inf.cpp -o inf
+  g++ -O2 inf.cpp -o inf
 clean:
   rm -rf inf
